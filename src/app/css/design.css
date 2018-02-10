@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand|Archivo+Black');
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 80%;
+	margin: 2% auto;
+}
+header{
+	background-color: #303F9F;
+}
+header h1{
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	padding: 1%;
+	margin: 1.5% 0;
+	font-size: 2.5em;
+}
+#faerg-kontainer{
+	width:100%;
+	margin-bottom: 5%;
+}
+#faerg-kontainer > div{
+	float: right;
+	margin-right: 1%;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+}
+#faerg-kontainer > div:hover{
+	width: 33px;
+	height: 33px;
+}
+#faerg-kontainer:after{
+	content:"";
+	display: block;
+	clear: right;
+}
+.faerg-form{
+	text-align: center;
+	border-bottom: 2px solid #f2f2f2;
+}
+.faerg-form input[type="search"]{
+	border: 4px solid #BDBDBD;
+	padding: 1%;
+	width: 25%;
+	
+}
+.faerg-form input[type="submit"]{
+	border: 4px solid #d11aff;
+	padding: 0.8%;
+	border-radius: 0 7px 7px 0;
+	width: 8%;
+	background-color: #d11aff;
+	color: white;
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+.faerg-form input[type="submit"]:focus{
+	outline: none;
+}
+.faerg-form input[type="submit"]:hover{
+	outline: none;
+	opacity:0.8;
+}
+.radera{
+	text-align: center;
+	font-size: 6em;
+	position: relative;
+	cursor: pointer;
+	color: #F44336;
+}
+.radera:hover{
+	opacity: 0.8;
+}
+.radera > span{
+	font-size: 0.2em;
+	position: absolute;
+	top:35%;
+}
+.checkbox-styling{
+}
+.visa{
+	display: block;
+}
+.goem{
+	display: none;
+}
+div.vissa{
+	display: block;
+}
+div.gom{
+	display: none;
+}
+.steg2-checkbox{
+	text-align: center;
+	border-bottom: 2px solid rgb(242, 242, 242);
+}
+.steg2-checkbox label{
+	color: grey;
+}
+#checkbox-styling{
+	transform: scale(2);
+	margin:2%;
+}
+#boll-kontainer{
+	margin-top:2%;
+	width: 96%;
+	height: auto;
+	padding: 2%;
+	background-color: rgba(97, 97, 97,0.7);
+	text-align: center;
+}
+#boll{
+	width: 250px;
+	height: 250px;
+	background-color: white;
+	border-radius: 50%;
+	position:relative;
+	margin: 0 0 1% 0;
+}
+.info-text{
+	font-family: 'Shrikhand', cursive;
+	font-size: 1.7em;
+	color: white;
+}
+#boll-kontainer .btn-styling{
+	cursor: pointer;
+	width: 30%;
+	border-radius: 7px;
+	background-color: #212121;
+	border: none;
+	font-family: 'Shrikhand', cursive;
+	font-size: 1.3em;
+	color: white;
+	padding: 1%;
+	margin: 2%;
+	-webkit-box-shadow: 8px 6px 4px 0px rgba(51,51,51,1);
+	-moz-box-shadow: 8px 6px 4px 0px rgba(51,51,51,1);
+	box-shadow: 8px 6px 4px 0px rgba(51,51,51,1);
+}
+#boll-kontainer .btn-styling:hover{
+	opacity: 0.8;
+}
+button:focus {
+	outline:0;
+}
+/*surfplatta*/
+@media(max-width:780px){
+#wrapper{
+	width: 100%;
+	margin: 0;
+}
+header{
+	width: 100%;
+	margin-bottom: 1%;
+	
+}
+header h1{
+	text-align: center;
+}
+.faerg-form input[type="search"]{
+	border: 4px solid #BDBDBD;
+	padding: 1%;
+	width: 50%;
+}
+.faerg-form input[type="submit"]{
+	width: 15%;
+}
+.info-text{
+	font-size: 1.3em;
+}
+#boll-kontainer .btn-styling{
+	width: 50%;
+	padding: 1.7%;
+}
+#boll{
+	width: 150px;
+	height: 150px;
+	margin: 0 0 1% 0;
+}
+}
+/*mobil*/
+@media(max-width:480px){
+.faerg-form input[type="search"]{
+	width: 60%;
+}
+.faerg-form input[type="submit"]{
+	width: 20%;
+	padding: none;
+}
+.info-text{
+	font-size: 1.2em;
+}
+#boll-kontainer .btn-styling{
+	width: 60%;
+	padding: 2%;
+}
+#boll{
+	width: 120px;
+	height: 120px;
+	margin: 0 0 1.5% 0;
+}
+}
+
+
