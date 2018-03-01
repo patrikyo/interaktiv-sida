@@ -13,8 +13,8 @@ class Boll extends Component{
 	}
 	flyttaBoll(e){
 	var pixel = ""+px+"px";
-    if (e.keyCode == '37') {
-       this.refs.rodBoll.style.right = pixel; px++;
+     if (e.keyCode == '39') {
+      this.refs.rodBoll.style.left = pixel; px++;
     }
    
 		
